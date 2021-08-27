@@ -1,0 +1,417 @@
+/* Bootstrap */
+
+:root {
+    --HFColor: #26292e;
+    --IconColor: black;
+    --Sect1BColor: #e7718b;
+    --text:  #596573;
+    --ButtonColor1: #2a2c2b;
+    --ButtonColor2: #4f5150; 
+    --ButtonColorOutline: #8b8a88;
+    --LogoFont: 'Butterfly Kids', cursive;
+    --TextFont: 'Open Sans Condensed', sans-serif; 
+    
+}
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}  
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
+
+.icon-bubbles2 {
+    width: 1.25em; 
+}
+
+.header a, .footer a {
+    padding: 12px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon-facebook, .icon-twitter, .icon-rss {
+    color: var(--IconColor);
+    font-size: 20px;
+}
+
+/* close icons */
+
+/* generic */
+
+body {
+    margin: 0;
+    padding: 0;   
+} 
+
+/* close generic */
+
+/* header */
+
+.header, .footer {
+    margin: 0;
+    background-color: var(--HFColor);
+    /* border: 1px solid red; */
+}
+
+
+
+
+.logo {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: var(--LogoFont);
+    font-size: 65px;
+    text-transform: capitalize;
+   /* border: 1px solid lightgray; */
+}
+
+.top-nav {
+    /* border: 1px solid green;  */
+}
+
+/* close header */
+
+/* main */
+
+.main {
+    font-family: var(--TextFont);
+}
+
+.sub-header1 {
+    font-size: 35px;
+    font-weight: bold;
+    /* border: 1px solid yellow; */
+}
+
+.section1 {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 15px;
+    background-color: var(--Sect1BColor);
+    font-family: var(--TextFont);
+    /* border: 1px solid black; */
+}
+
+.button {
+    border-radius: 8px;
+    margin-right: 20px; 
+    padding: 10px;
+    line-height: 1;
+    text-transform: capitalize; 
+    color: white;
+    font-family: var(--TextFont);
+    background: linear-gradient(#8b8a88, #4f5150, #2a2c2b);
+}
+
+
+.block1 .sub-header {
+    margin: 0;
+    font-size: calc(16px + (32 - 16) * ((100vw - 300px)  / (1600 - 300)));
+}
+
+
+.block1-text {
+    width: 95%;
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+    /* border: 1px solid lightgreen; */
+}
+
+.landing-img {
+    display: block;
+    margin: 10px auto;
+    width: 60%; 
+    height: auto;
+}
+
+.section2 {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 20px; 
+    color: var(--text);
+    background-color: #f4f4f6;
+    border-bottom: 12px solid #f7e4e8;
+}
+
+.sub-header-section2 {
+    font-size: 20px;
+    color: var(--IconColor);
+}
+
+
+ .products {
+     width: 85%;
+     padding-left: 70px;
+     /* border: 1px solid red; */
+ }
+
+
+ .product {
+    width: 200px;
+    height: 120px; 
+    margin-bottom: 70px;
+    background: var(--ButtonColor2);
+    border: 10px solid lightgray;
+    box-shadow: 0 6px 8px -4px; 
+} 
+
+.icon-search {
+    color: white;
+    display: block;
+    margin: 15% auto;
+    font-size: 35px;
+}
+
+.section3 {
+    margin: 0;
+    padding: 0;
+}
+
+.aside {
+    width:30%;
+    /* border: 1px solid red; */
+}
+
+.more-button {
+    padding: 3px 18px;
+    color: var(--sec);
+    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: capitalize;
+    background-color: var(--btnColor);
+    border-radius: 10px;
+}
+
+/* close main */
+
+/* footer */
+
+.colophon {
+    margin: 0;
+    color: white;
+    width: 60%;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+
+
+.colophon-text {
+    margin: 0;
+    color: var(--sec);
+    font-size: 14px;
+}
+/* close footer */
+
+/* media queries */
+
+/* 576px */
+
+@media (max-width: 576px) {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section1 {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing-img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .products {
+        
+        /* border: 1px solid red;  */
+    }
+    .product {
+        width: 250px;
+        height: 130px;
+        /* border: 1px solid green; */
+    }
+}
+
+@media (max-width: 576px) {
+    .section3 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .sub-header1-section3 {
+        padding-bottom: 20px;
+        /* border: 1px solid orange; */
+    }
+
+    .sub-header2-section3 {
+        font-size: 30px;
+        /* border: 1px solid green; */
+    }
+
+}
+
+@media (max-width: 576px) {
+    .aside {  
+        width: 80%;
+        padding-left: 100px;
+        margin-top: -30px;
+        /* border: 1px solid black; */
+       }
+
+}
+
+@media (max-width: 576px) {
+    .colophon {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .colophon-text {
+        font-size: 10px;
+    }
+}
+
+
+
+/* 768px */
+
+@media (min-width: 768px) {
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .logo {
+        font-size: 50px;  
+    }
+}
+
+@media (min-width: 768px) {
+    .section1 {
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sub-header1-section3 {
+        padding-bottom: 20px;
+        /* border: 1px solid orange; */
+    }
+
+    .sub-header2-section3 {
+        padding-bottom: 10px;
+    }
+    .products {
+        padding-left: 100px;
+        /* border: 1px solid blue; */
+    }
+
+}
+
+@media (min-width: 768px) {
+    .section3 {
+        padding-top: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .aside {
+        width: 90%;
+        /* border: 1px solid red; */
+    }
+}
+
+
+
+@media (min-width: 768px) {
+
+    .colophon {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .colophon-text {
+            width: 130%;
+            font-size: 11px;
+            /* border: 1px solid red; */
+    }
+}
+
+/* 992 px */
+
+@media (max-width: 992px) {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 9px;
+        /* border: 1px solid red; */
+   }
+
+   .top-nav {
+       margin-top: 15px;
+       /* border: 1px solid red; */
+   }
+}
+
+@media (max-width: 992px) { 
+    .landing-img {
+        width: 100%;
+    }
+    .section1 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) { 
+
+    .products {
+        width: 105%;
+        padding-right: 20px
+        /* border: 1px solid red; */
+    }
+    .aside {  
+        font-size: 15px;
+    }
+
+    .colophon {
+        padding-bottom: 5px;
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
